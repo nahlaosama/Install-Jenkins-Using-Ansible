@@ -16,14 +16,19 @@ The playbook handles the full setup process:
 - Jenkins
 - Ubuntu/Debian-based system
 
-## Prerequisites
-- A machine running Ubuntu or Debian
-- Ansible installed on the machine
-- Sudo/root privileges
-
 ## How to Use
 
 1. Make sure Ansible is installed:
    ```bash
    sudo apt update
    sudo apt install ansible -y
+   
+2. Save the playbook into a file, for example: install_jenkins.yml
+   
+3. Run the playbook:
+   ```bash
+   ansible-playbook install_jenkins.yml
+   
+4. Once completed, Jenkins will be running and accessible on port 8080.
+
+
